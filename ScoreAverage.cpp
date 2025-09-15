@@ -20,7 +20,8 @@ int main()
     cin >> score2;
     cout << "please enter your third score " << endl;
     cin >> score3;
-    average = (score1 + score2 + score3) / 3;
+    sum = score1 + score2 + score3;
+    average = sum / 3;
     cout << "your average score is " << average;
 
 }
