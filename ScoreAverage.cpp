@@ -1,20 +1,26 @@
-// ScoreAverage.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+File name: ScoreAverage
+Programmer: Jamen Cannady
+Date: 09/25
+Requirements: ask for three scores and display the average
+*/
 
 #include <iostream>
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int score1, score2, score3, sum;
+    double average;
+
+    cout << "please enter your first score " << endl;
+    cin >> score1;
+    cout << "please enter your second score " << endl;
+    cin >> score2;
+    cout << "please enter your third score " << endl;
+    cin >> score3;
+    average = (score1 + score2 + score3) / 3;
+    cout << "your average score is " << average;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
